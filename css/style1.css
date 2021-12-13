@@ -1,0 +1,250 @@
+body {
+    background-color: rgb(244, 244, 244);
+    font-family: "Arial",
+}
+
+/* 整体 */
+.whole {
+    width: 100%;
+    height: 100%;
+    /* 使整体大的div布局居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 禁止选择文字 */
+    user-select: none;
+}
+
+/* 轮播图 */
+.advertisement {
+    width: 100%;
+    height: 30rem;
+    margin-top: 10vh;
+    position: relative;
+}
+
+/* 轮播图 存放图片 ul*/
+.advertisement .list {
+    width: 100%;
+    height: 30rem;
+    list-style: none;
+    position: relative;
+}
+
+/* 轮播图 存放图片 li*/
+.advertisement .item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 10rem;
+    color: #fff;
+    opacity: 0;
+    transition: ease 0.5s;
+    border-radius: 8px;
+}
+
+
+/* 轮播图 图片 */
+.advertisement .item img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 轮播图切换按钮 */
+.advertisement .btn {
+    width: 3.6rem;
+    height: 3.6rem;
+    position: absolute;
+    cursor: pointer;
+    color: rgb(90, 90, 90);
+    top: 13rem;
+    z-index: 11;
+    /* 取消按钮点击时蓝色边框 */
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: ease-in 0.3s;
+}
+
+.advertisement .btn:hover {
+    background: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(8px);
+}
+
+/* 轮播图左切换按钮 */
+.advertisement #goPre {
+    left: 1rem;
+}
+
+/* 轮播图右切换按钮 */
+.advertisement #goNext {
+    right: 1rem;
+}
+
+/* 轮播图 图片要展示在上面 */
+.item.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+/* 轮播图存放序点 */
+.pointList {
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+    margin-left: 45%;
+    bottom: 20px;
+    z-index: 12;
+}
+
+/* 序点 */
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: rgba(252, 252, 252, 0.479);
+}
+
+/* 轮播图 当前图片位置顺序 定位点 */
+.point.active {
+    background-color: #177cb0;
+    /* 毛玻璃 */
+    backdrop-filter: blur(10px);
+}
+
+/* 板块分类 */
+.sort {
+    width: 100%;
+    height: 32vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 板块分类 标题*/
+.sort .sort_bt {
+    width: 5vw;
+    height: 5vh;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 1rem;
+    border-bottom: 3px solid rgb(1, 116, 170);
+}
+
+/* 板块分类 小模块*/
+.sort .sort_mk {
+    width: 100%;
+    height: 12vh;
+}
+
+/* 板块分类 小模块的ul*/
+.sort .sort_mk ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 平分空间 */
+    justify-content: space-evenly;
+}
+
+/* 板块分类 小模块的li*/
+.sort .sort_mk .sort_mk_ul .sort_mk_li {
+    width: 7vw;
+    height: 12vh;
+    list-style: none;
+    float: left;
+    border-radius: 10px;
+    background-color: rgb(246, 251, 255);
+    transition: 0.35s all;
+}
+
+.sort .sort_mk .sort_mk_ul .sort_mk_li:hover {
+    background-color: #177cb0;
+}
+
+/* 板块分类 小模块li的图标*/
+.sort .sort_mk .sort_mk_ul .sort_mk_li .sort_mk_li_tb {
+    width: 100%;
+    height: 70%;
+}
+
+.sort .sort_mk .sort_mk_ul .sort_mk_li .sort_mk_li_tb p {
+    cursor: pointer;
+    text-align: center;
+    line-height: 8vh;
+    font-size: 32px;
+    transition: 0.2s ease;
+}
+
+/* .sort .sort_mk .sort_mk_ul .sort_mk_li .sort_mk_li_tb p:hover {
+    font-size: 33px;
+    color: rgb(1, 116, 170);
+} */
+
+.sort .sort_mk .sort_mk_ul .sort_mk_li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 板块分类 小模块li的文字*/
+.sort .sort_mk .sort_mk_ul .sort_mk_li .sort_mk_li_wz {
+    text-align: center;
+}
+
+/* 游戏简介 */
+.intro {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(244, 244, 252);
+}
+
+/* 游戏简介标题 */
+.intro .intro_bt {
+    width: 5vw;
+    height: 5vh;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 1rem;
+    border-bottom: rgb(1, 116, 170) 3px solid;
+}
+
+.intro .intro2 {
+    width: 46vw;
+    height: 35vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.intro .intro_img {
+    width: 14vw;
+    height: 34vh;
+}
+
+.intro .intro_img img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 2px 10px rgb(48, 48, 48);
+}
+
+/* 游戏简介 介绍文字 */
+.intro .intro_wz {
+    width: 35vw;
+    height: 32vh;
+    line-height: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.intro .intro_wz p {
+    text-indent: 2rem;
+}

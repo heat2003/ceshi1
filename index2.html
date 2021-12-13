@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏介绍</title>
+    <link rel="stylesheet" href="../Werewolf/css/iconfont.css">
+    <link rel="stylesheet" href="../Werewolf/css/nav.css">
+    <link rel="stylesheet" href="../Werewolf/css/BotTom.css">
+    <link rel="stylesheet" href="../Werewolf/css/style2.css">
+    <link rel="icon" type="image/x-ico" href="../Werewolf/images/分享羊.png" />
+</head>
+
+<body>
+    <!-- 整体 -->
+    <div class="whole">
+        <!-- 导航栏 -->
+        <div class="nav">
+            <!-- 放图标 -->
+            <div class="nav_left">
+                <img src="../Werewolf/images/分享羊.png" alt="">
+            </div>
+            <!-- 导航栏 菜单 -->
+            <div class="nav_centre">
+                <ul class="nav_centre_ul">
+                    <li class="nav_centre_li" onclick="sy()">
+                        <a class="a1">首页</a>
+                        <!-- 点击展开下划线 -->
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li" onclick="yz()">
+                        <a class="a1">简介</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li" onclick="kp()">
+                        <a class="a1">卡牌</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li">
+                        <a class="a1">专题</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li">
+                        <a class="a1">资讯</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li tooltip">
+                        <a class="a1">下载</a>
+                        <span class="tooltiptext">
+                            <img src="../Werewolf/images/ewm.png" alt="下载二维码">
+                        </span>
+                        <div class="xhx"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 放登录注册 -->
+            <div class="nav_right">
+                <button onclick="login()">登录/注册</button>
+            </div>
+        </div>
+
+        <!-- 游戏介绍  Introduction-->
+        <div class="Introduction">
+            <!-- 标题 -->
+            <div class="Introduction_bt">
+                <h3>游戏介绍</h3>
+            </div>
+            <!-- 图片 -->
+            <div class="Introduction_img">
+                <img src="../Werewolf/images/lb1.jpeg" alt="">
+            </div>
+            <!-- 文字 -->
+            <div class="Introduction_wz">
+                <p>背景设定</p>
+                <p>狼人的来源需要追溯至中世纪的可怕“大灾难”——黑死病。瘟疫夺去了欧洲三分之一人的生命，但也有极少数人幸存下来，他们也因此获得了强大的力量——亦或说是诅咒，拥有了化身为狼的能力。
+                    狼人与人类之间的大规模战争一共进行了两次，而狼人最终被赶到了北方苦寒的冰原。
+                    游戏取材于第二次战争结束百余年后的近维多利亚时代，双方在各自休养了百年后，大部分人类已经忘却了祖先曾面临的恐怖，已变成传说的狼人们又开始蠢蠢欲动……</p>
+                <p>官方玩法</p>
+                <p>
+                    一局狼人杀游戏一般由十二名玩家组成，他们将分属于游戏中两个对立的阵营：
+                    狼人阵营和好人阵营。好人阵营人数较多但互不认识，
+                    以放逐投票和角色技能为主要手段，需要消灭所有隐藏在人群中的狼人以获取最后的胜利；而人数较少互相认识的狼人们则隐匿于他们之间，
+                    依靠夜晚猎杀好人和白天诱导好人错误投票为获胜手段。
+                    神民身份
+                    八名好人玩家中有四位玩家为平民，他们除了在白天发言和投票之外没有任何的特殊能力；其余的四位玩家分别扮演拥有不同特殊能力的神职。
+                    胜负判断
+                    好人阵营:
+                    狼人全部出局即获胜。
+                    狼人阵营：
+                    屠边：获胜方式有两种，一种是让四位神职全部出局；另外一种是让四位平民全部出局。
+                    屠城：杀死所有好人。
+                </p>
+                <p>游戏流程</p>
+                <p>
+                    每一局狼人杀游戏都将从夜晚开始，每一个夜晚狼人可以睁眼并共同猎杀场上的一位玩家。夜晚之后将会进入白天，白天是所有玩家发言和投票的环节。每个白天场上存活的玩家将按顺序依次进行发言，在所有玩家发言结束后，法官将会组织一次放逐公投，在放逐公投中每一位玩家都拥有一票的投票权，玩家可以选择把票投给自己心目中所认为的狼人。
+                    最终，得票数最多的玩家将会被放逐出局并留下“遗言”。
+                    “遗言”之后游戏将会进入下一个夜晚，狼人又可以再一次睁眼选择一位玩家进行猎杀，
+                    如此“黑夜—白天—黑夜”循环，直到某一方阵营达成了胜利条件，则游戏结束。
+                </p>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="BotTom">
+            <!-- 底部logo -->
+            <div class="BotTom_logo">
+                <!-- <img src="../Werewolf/images/分享羊.png" alt=""> -->
+            </div>
+            <!-- 底部图标 -->
+            <div class="BotTom_tb">
+                <ul class="BotTom_ul">
+                    <li class="BotTom_li1">
+                        <a class="iconfont wx">&#xe63f;</a>
+                    </li>
+                    <li class="BotTom_li2">
+                        <a class="iconfont qq">&#xe882;</a>
+                    </li>
+                    <li class="BotTom_li3">
+                        <a class="iconfont wb">&#xe600;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 登陆注册按钮点击后执行跳转事件
+        function login() {
+            window.location.href = '../Werewolf/index5.html';
+        }
+
+        function yz() {
+            alert('已经在当前页面');
+        }
+        // 点击后执行跳转的事件
+        function sy(){
+            // 跳转到首页
+            window.location.href = '../Werewolf/index.html';
+        }
+         // 点击后执行跳转的事件
+         function kp(){
+            // 跳转到首页
+            window.location.href = '../Werewolf/index3.html';
+        }
+    </script>
+</body>
+
+</html>

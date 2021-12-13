@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(2px);
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    /* 下边框线 */
+    border-bottom: 1px rgba(255, 255, 255, 0.514) solid;
+}
+/* 导航栏左边区域 */
+.nav_left {
+    width: 25%;
+    height: 10vh;
+}
+.nav_left img{
+    width: 5vw;
+    height: 9vh;
+    margin-left: 10vw;
+}
+/* 导航栏中间区域 */
+.nav .nav_centre {
+    width: 50%;
+    height: 10vh;
+}
+/* 导航栏中间区域的ul */
+.nav .nav_centre .nav_centre_ul {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* 导航栏中间区域的li */
+.nav .nav_centre .nav_centre_ul .nav_centre_li {
+    /* 取消 点 样式 */
+    list-style: none;
+    /* 行高 */
+    line-height: 10vh;
+    /* 鼠标形状变小手 */
+    cursor: pointer;
+    /* 相对定位 */
+    position: relative;
+    transition: 0.2s ease;
+}
+.nav .nav_centre .nav_centre_ul .nav_centre_li .a1{
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+/* 导航栏中间菜单下划线 */
+.nav .nav_centre .nav_centre_ul .nav_centre_li .xhx{
+    width: 100%;
+    height: 2px;
+    margin-top: -20px;
+    position:absolute;
+    background-color: #789262;
+    transform: scaleX(0);
+    transition: 0.2s ease;
+}
+.nav .nav_centre .nav_centre_ul .nav_centre_li:hover .a1{
+    color: rgb(226, 226, 226);
+}
+.nav .nav_centre .nav_centre_ul .nav_centre_li:hover .xhx{
+    transform: scaleX(1);
+}
+
+/* 导航栏右边区域 */
+.nav_right {
+    width: 25%;
+    height: 10vh;
+    padding: 3vh;
+}
+.nav_right button{
+    width: 8vw;
+    height: 4vh;
+    color: rgb(90, 90, 90);
+    cursor: pointer;
+    /* 取消点击蓝色边框 */
+    outline: none;
+    border: 2px solid rgb(53, 53, 53);
+    background-color: rgba(255, 255, 255, 0);
+}
+/* 按钮 按下效果 */
+.nav_right button:active {
+    transform: scale(0.95, 0.95);
+}
+
+
+/* 下载二维码 提示框 */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 11vw;
+    height: 21vh;
+    background-color: rgba(0, 0, 0, 0.438);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 20%;
+    margin-left: -5vw;
+}
+.tooltip .tooltiptext img{
+    width: 10vw;
+    height: 20vh;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.438) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

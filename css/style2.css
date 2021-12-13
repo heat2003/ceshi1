@@ -1,0 +1,22 @@
+.Introduction{
+    margin-top: 12vh;
+
+}
+.Introduction .Introduction_bt{
+    width: 5vw;
+    height: 5vh;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 1rem;
+    border-bottom: 3px solid rgb(1, 116, 170);
+}
+.Introduction .Introduction_img{
+    width: 74%;
+    height: 45vh;
+    margin: 0 auto;
+}
+.Introduction .Introduction_img img{
+    width: 100%;
+    height: 100%;
+}
