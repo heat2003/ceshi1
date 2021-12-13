@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公告</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/style7.css">
+    <link rel="stylesheet" href="./css/BotTom.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="icon" type="image/x-ico" href="../Werewolf/images/分享羊.png" />
+</head>
+
+<body>
+    <!-- 整体 -->
+    <div class="whole">
+        <!-- 导航栏 -->
+        <div class="nav">
+            <!-- 放图标 -->
+            <div class="nav_left">
+                <img src="../Werewolf/images/分享羊.png" alt="">
+            </div>
+            <!-- 导航栏 菜单 -->
+            <div class="nav_centre">
+                <ul class="nav_centre_ul">
+                    <li class="nav_centre_li" onclick="sy()">
+                        <a class="a1">首页</a>
+                        <!-- 点击展开下划线 -->
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li" onclick="jz()">
+                        <a class="a1">简介</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li" onclick="kp()">
+                        <a class="a1">卡牌</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li">
+                        <a class="a1">专题</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li">
+                        <a class="a1">资讯</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li tooltip">
+                        <a class="a1">下载</a>
+                        <span class="tooltiptext">
+                            <img src="../Werewolf/images/ewm.png" alt="下载二维码">
+                        </span>
+                        <div class="xhx"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 放登录注册 -->
+            <div class="nav_right">
+                <button onclick="login()">登录/注册</button>
+            </div>
+        </div>
+        <!-- 公告 Notice-->
+        <div class="Notice">
+            <!-- 标题 -->
+            <div class="Notice_bt">
+                <h3>新闻公告</h3>
+            </div>
+            <!-- 内容 文字 -->
+            <div class="Notice_wz">
+                <ul class="Notice_wz_ul1">
+                    <li>
+                        <strong>与狼人杀同行！狼人杀校园行活动圆满结束</strong>
+                        <span>12-08</span>
+                    </li>
+                    <li>
+                        <strong>【门派赛S11】赛程图1209</strong>
+                        <span>12-08</span>
+                    </li>
+                    <li>
+                        <strong>【门派赛S11】赛程图1208</strong>
+                        <span>12-07</span>
+                    </li>
+                    <li>
+                        <strong>【门派赛S11】赛程图1207</strong>
+                        <span>12-06</span>
+                    </li>
+                    <li>
+                        <strong>【门派赛S11】日报1207</strong>
+                        <span>12-04</span>
+                    </li>
+                </ul>
+                <ul class="Notice_wz_ul2">
+                    <li>
+                        <strong>与狼人杀同行！狼人杀校园行活动圆满结束</strong>
+                        <span>12-08</span>
+                    </li>
+                    <li>
+                        <strong>【门派赛S11】赛程图1209</strong>
+                        <span>12-08</span>
+                    </li>
+                    <li>
+                        <strong>【门派赛S11】赛程图1208</strong>
+                        <span>12-07</span>
+                    </li>
+                    <li>
+                        <strong>【门派赛S11】赛程图1207</strong>
+                        <span>12-06</span>
+                    </li>
+                    <li>
+                        <strong>【门派赛S11】日报1207</strong>
+                        <span>12-04</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+         <!-- 底部 -->
+         <div class="BotTom">
+            <!-- 底部logo -->
+            <div class="BotTom_logo">
+                <!-- <img src="../Werewolf/images/分享羊.png" alt=""> -->
+            </div>
+            <!-- 底部图标 -->
+            <div class="BotTom_tb">
+                <ul class="BotTom_ul">
+                    <li class="BotTom_li1">
+                        <a class="iconfont wx">&#xe63f;</a>
+                    </li>
+                    <li class="BotTom_li2">
+                        <a class="iconfont qq">&#xe882;</a>
+                    </li>
+                    <li class="BotTom_li3">
+                        <a class="iconfont wb">&#xe600;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 登陆注册按钮点击后执行跳转事件
+        function login() {
+            // 跳转到登录注册的页面
+            window.location.href = '../Werewolf/index5.html';
+        }
+        function sy() {
+            // 跳转到登录注册的页面
+            window.location.href = '../Werewolf/index.html';
+        }
+
+        //点击后执行跳转事件
+        function jz() {
+            // 跳转到登录简介的页面
+            window.location.href = '../Werewolf/index2.html';
+        }
+        function kp() {
+            // 跳转到登录简介的页面
+            window.location.href = '../Werewolf/index3.html';
+        }
+    </script>
+</body>
+
+</html>

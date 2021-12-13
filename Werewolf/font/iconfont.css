@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2999592 */
+  src: url('iconfont.woff2?t=1639322063897') format('woff2'),
+       url('iconfont.woff?t=1639322063897') format('woff'),
+       url('iconfont.ttf?t=1639322063897') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mima:before {
+  content: "\e62f";
+}
+
+.icon-yonghuming:before {
+  content: "\e627";
+}
+
+.icon-zaicishurumima:before {
+  content: "\e62a";
+}
+
+.icon-xinlangweibo:before {
+  content: "\e600";
+}
+
+.icon-weixin:before {
+  content: "\e63f";
+}
+
+.icon-saishi:before {
+  content: "\e611";
+}
+
+.icon-QQ:before {
+  content: "\e882";
+}
+
+.icon-gengduo:before {
+  content: "\e601";
+}
+
+.icon-gonggao:before {
+  content: "\e626";
+}
+
+.icon-shoucang:before {
+  content: "\e8b9";
+}
+
+.icon-paihangbang:before {
+  content: "\e760";
+}
+
+.icon-a-wenjianshuben:before {
+  content: "\e621";
+}
+
+.icon-zuoyouqiehuan:before {
+  content: "\e637";
+}
+
+.icon-zuoyouqiehuan1:before {
+  content: "\e68a";
+}
+

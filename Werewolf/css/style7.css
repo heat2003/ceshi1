@@ -1,0 +1,65 @@
+.whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whole .Notice {
+    width: 60vw;
+    height: 90vh;
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whole .Notice .Notice_bt {
+    height: 5vh;
+    border-bottom: 3px solid #a1afc9b2;
+}
+
+.whole .Notice .Notice_wz {
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    margin-top: 5vh;
+    border-radius: 10px;
+    background: rgb(246, 251, 255);
+}
+
+.Notice_wz_ul1{
+    float: left;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Notice_wz ul li{
+    transition: 0.3s ease;
+}
+.Notice_wz ul li:hover{
+    cursor: pointer;
+    color: #a1afc9b2;
+}
+
+.Notice_wz_ul1 li span,.Notice_wz_ul2 li span {
+    float: right;
+}
+
+.Notice_wz_ul2 {
+    float: right;
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* 底部 */
+.BotTom {
+    margin-top: 20vh;
+}

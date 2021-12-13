@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rotate {
+            0%{
+                width: 0;
+            }
+    10% {
+      width: 50px;
+    }
+    20%{
+        width: 100px;
+    }
+    30%{
+        width: 150px;
+    }
+    40%{
+        width: 200px;
+    }
+    50%{
+        width: 250px;
+    }
+    60%{
+        width:300px;
+    }
+    70%{
+        width: 350px;
+    }
+    80%{
+        width: 400px;
+    }
+    90%{
+        width: 450px;
+    }
+
+    100% {
+        width: 500px;
+    }
+}
+.a3{
+    width: 500px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+}
+.a1{
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    border: 2px solid #000;
+}
+.a2{
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 2px;
+    
+    background-color: royalblue;
+}
+.zx{
+    width: 10vw;
+    height: 10vh;
+    background: indigo;
+}
+/* .zx:hover{
+    animation:rotate 10s ;
+
+} */
+    </style>
+</head>
+<body>
+    <div class="a3">
+        <div class="a1">
+
+    </div>
+    <div class="a2"></div>
+    </div>
+    <div class="zx" onclick="dj()">
+        点击
+    </div>
+    <script>
+        function dj(){
+            document.getElementsByClassName("a2").style.animation="rotate 10s";
+
+        }
+    </script>
+</body>
+</html>

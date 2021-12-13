@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="../Werewolf/css/iconfont.css">
+    <link rel="stylesheet" href="../Werewolf/css/nav.css">
+    <link rel="stylesheet" href="../Werewolf/css/BotTom.css">
+    <link rel="stylesheet" href="../Werewolf/css/style1.css">
+    <link rel="icon" type="image/x-ico" href="../Werewolf/images/分享羊.png" />
+</head>
+
+<body>
+    <!-- 整体 -->
+    <div class="whole">
+           <!-- 导航栏 -->
+           <div class="nav">
+            <!-- 放图标 -->
+            <div class="nav_left">
+                <img src="../Werewolf/images/分享羊.png" alt="">
+            </div>
+            <!-- 导航栏 菜单 -->
+            <div class="nav_centre">
+                <ul class="nav_centre_ul">
+                    <li class="nav_centre_li" onclick="yz()">
+                        <a class="a1">首页</a>
+                        <!-- 点击展开下划线 -->
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li" onclick="jz()">
+                        <a class="a1">简介</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li" onclick="kp()">
+                        <a class="a1">卡牌</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li">
+                        <a class="a1">专题</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li">
+                        <a class="a1">资讯</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li tooltip">
+                        <a class="a1">下载</a>
+                        <span class="tooltiptext">
+                            <img src="../Werewolf/images/ewm.png" alt="下载二维码">
+                        </span>
+                        <div class="xhx"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 放登录注册 -->
+            <div class="nav_right">
+                <button onclick="login()">登录/注册</button>
+            </div>
+        </div>
+
+        <!-- 轮播图 advertisement-->
+        <div class="advertisement">
+            <ul class="list">
+                <li class="item active">
+                    <img src="../Werewolf/images/lb1.jpeg" alt="">
+                </li>
+                <li class="item">
+                    <img src="../Werewolf/images/lb2.jpg" alt="">
+                </li>
+                <li class="item">
+                    <img src="../Werewolf/images/lb3.jpg" alt="">
+                </li>
+                <li class="item">
+                    <img src="../Werewolf/images/lb4.png" alt="">
+                </li>
+                <li class="item">
+                    <img src="../Werewolf/images/lb5.jpg" alt="">
+                </li>
+            </ul>
+            <ul class="pointList">
+                <li class="point active" data-index="0"></li>
+                <li class="point" data-index="1"></li>
+                <li class="point" data-index="2"></li>
+                <li class="point" data-index="3"></li>
+                <li class="point" data-index="4"></li>
+            </ul>
+            <button class="btn iconfont" id="goPre">&#xe68a;</button>
+            <button class="btn iconfont" id="goNext">&#xe637;</button>
+        </div>
+
+        <!-- 板块分类 sort -->
+        <div class="sort">
+            <!-- 标题 -->
+            <div class="sort_bt">
+                <h3>板块分类</h3>
+            </div>
+            <!-- 小模块 -->
+            <div class="sort_mk">
+                <ul class="sort_mk_ul">
+                    <li class="sort_mk_li">
+                        <!-- 图标 -->
+                        <div class="sort_mk_li_tb">
+                            <p class="iconfont">&#xe611;</p>
+                        </div>
+                        <!-- 文字 -->
+                        <div class="sort_mk_li_wz">
+                            <p>赛季</p>
+                        </div>
+                    </li>
+                    <li class="sort_mk_li">
+                        <!-- 图标 -->
+                        <div class="sort_mk_li_tb">
+                            <p class="iconfont">&#xe760;</p>
+                        </div>
+                        <!-- 文字 -->
+                        <div class="sort_mk_li_wz">
+                            <p>排行</p>
+                        </div>
+                    </li>
+                    <li class="sort_mk_li" onclick="gg()">
+                        <!-- 图标 -->
+                        <div class="sort_mk_li_tb">
+                            <p class="iconfont">&#xe626;</p>
+                        </div>
+                        <!-- 文字 -->
+                        <div class="sort_mk_li_wz">
+                            <p>公告</p>
+                        </div>
+                    </li>
+                    <li class="sort_mk_li">
+                        <!-- 图标 -->
+                        <div class="sort_mk_li_tb">
+                            <p class="iconfont">&#xe8b9;</p>
+                        </div>
+                        <!-- 文字 -->
+                        <div class="sort_mk_li_wz">
+                            <p>收藏</p>
+                        </div>
+                    </li>
+                    <li class="sort_mk_li">
+                        <!-- 图标 -->
+                        <div class="sort_mk_li_tb">
+                            <p class="iconfont">&#xe621;</p>
+                        </div>
+                        <!-- 文字 -->
+                        <div class="sort_mk_li_wz">
+                            <p>评测</p>
+                        </div>
+                    </li>
+                    <li class="sort_mk_li">
+                        <!-- 图标 -->
+                        <div class="sort_mk_li_tb">
+                            <p class="iconfont">&#xe601;</p>
+                        </div>
+                        <!-- 文字 -->
+                        <div class="sort_mk_li_wz">
+                            <p>更多</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 游戏简介 intro-->
+        <div class="intro">
+            <!-- 游戏简介标题 -->
+            <div class="intro_bt">
+                <h3>游戏简介</h3>
+            </div>
+            <!-- 用把游戏介绍里面居中摆放 -->
+            <div class="intro2">
+                <!-- 图片 -->
+                <div class="intro_img">
+                    <img src="./images/langrensha.jpg" alt="">
+                </div>
+                <!-- 介绍文字 -->
+                <div class="intro_wz">
+                    <p>
+                        狼人杀是一款由由狼人杀（海南）文化传媒有限公司开发、网易代理发行的手机游戏。
+                        游戏采用蒂姆伯顿画风，提供烧脑分析、严谨认真的进阶12人场，玩法多样的10人娱乐场,还有利于新手快速学习、轻松上手的6人新手场供玩家选择。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="BotTom">
+            <!-- 底部logo -->
+            <div class="BotTom_logo">
+                <!-- <img src="../Werewolf/images/分享羊.png" alt=""> -->
+            </div>
+            <!-- 底部图标 -->
+            <div class="BotTom_tb">
+                <ul class="BotTom_ul">
+                    <li class="BotTom_li1">
+                        <a class="iconfont wx">&#xe63f;</a>
+                    </li>
+                    <li class="BotTom_li2">
+                        <a class="iconfont qq">&#xe882;</a>
+                    </li>
+                    <li class="BotTom_li3">
+                        <a class="iconfont wb">&#xe600;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../Werewolf/js/index.js"></script>
+</body>
+
+</html>

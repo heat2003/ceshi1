@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../Werewolf/css/style5.css">
+    <link rel="stylesheet" href="../Werewolf/css/nav.css">
+    <link rel="icon" type="image/x-ico" href="../Werewolf/images/分享羊.png" />
+</head>
+
+<body>
+    <!-- 整体 -->
+    <div class="whole">
+        <!-- 导航栏 -->
+        <div class="nav">
+            <!-- 放图标 -->
+            <div class="nav_left">
+                <img src="../Werewolf/images/分享羊.png" alt="">
+            </div>
+            <!-- 导航栏 菜单 -->
+            <div class="nav_centre">
+                <ul class="nav_centre_ul">
+                    <li class="nav_centre_li" onclick="sy()">
+                        <a class="a1">首页</a>
+                        <!-- 点击展开下划线 -->
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li" onclick="jz()">
+                        <a class="a1">简介</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li" onclick="kp()">
+                        <a class="a1">卡牌</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li">
+                        <a class="a1">专题</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li">
+                        <a class="a1">资讯</a>
+                        <div class="xhx"></div>
+                    </li>
+                    <li class="nav_centre_li tooltip">
+                        <a class="a1">下载</a>
+                        <span class="tooltiptext">
+                            <img src="../Werewolf/images/ewm.png" alt="下载二维码">
+                        </span>
+                        <div class="xhx"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 放登录注册 -->
+            <div class="nav_right">
+                <button onclick="dl()">登录/注册</button>
+            </div>
+        </div>
+
+        <!-- 登录 dl -->
+        <div class="dl">
+            <!-- 标题 -->
+            <div class="dl_bt">
+                <h3>登录 /
+                    <span onclick="zc()">去注册</span>
+                </h3>
+            </div>
+            <!-- 登录输入部分 -->
+            <form action="">
+                <!-- 标题 -->
+                <div class="hy">欢迎登录</div>
+                <!-- 输入框 -->
+                <div class="srk">
+                    <input type="text" maxlength="8" class="yhm" placeholder="用户名">
+                    <!-- 输入框获取焦点 显示下边框 -->
+                    <div class="xbk"></div>
+                </div>
+
+                <div class="srk">
+                    <input type="password" maxlength="19" class="mm" placeholder="密码"> <!-- 输入框获取焦点 显示下边框 -->
+                    <div class="xbk"></div>
+                </div>
+                <button>登录</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        function dl() {
+            alert("！");
+        }
+        // 点击跳转事件
+        function sy() {
+            // 首页
+            window.location.href = '../Werewolf/index.html';
+        }
+        function jz() {
+            // 简介
+            window.location.href = '../Werewolf/index2.html';
+        }
+        function kp() {
+            // 卡片
+            window.location.href = '../Werewolf/index3.html';
+        }
+
+        function zc() {
+            // 注册
+            window.location.href = '../Werewolf/index6.html';
+        }
+
+    </script>
+</body>
+
+</html>
